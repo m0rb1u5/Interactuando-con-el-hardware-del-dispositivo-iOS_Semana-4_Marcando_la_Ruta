@@ -24,12 +24,26 @@
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="sRw-65-MI7">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </mapView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="n33-gl-X5C">
+                                <rect key="frame" x="84.5" y="619" width="206" height="29"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <segments>
+                                    <segment title="Estándar"/>
+                                    <segment title="Satélite"/>
+                                    <segment title="Híbrido"/>
+                                </segments>
+                                <connections>
+                                    <action selector="cambiarTipoMapa:" destination="BYZ-38-t0r" eventType="valueChanged" id="RKg-Pu-e4q"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="sRw-65-MI7" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="2cr-6R-Nxk"/>
                             <constraint firstItem="sRw-65-MI7" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-20" id="E5J-dL-Ky0"/>
                             <constraint firstItem="sRw-65-MI7" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="TaN-CZ-GMj"/>
+                            <constraint firstItem="n33-gl-X5C" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="d9A-an-BTH"/>
+                            <constraint firstAttribute="bottom" secondItem="n33-gl-X5C" secondAttribute="bottom" constant="20" symbolic="YES" id="eUv-vC-vh7"/>
                             <constraint firstItem="sRw-65-MI7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="n5q-0L-FfO"/>
                             <constraint firstItem="sRw-65-MI7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sAe-S9-ftl"/>
                         </constraints>

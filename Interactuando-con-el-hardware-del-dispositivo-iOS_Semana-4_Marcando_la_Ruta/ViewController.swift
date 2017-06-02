@@ -26,6 +26,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         let span = MKCoordinateSpanMake(0.001, 0.001)
         let region = MKCoordinateRegionMake(self.mapa.centerCoordinate , span)
         self.mapa.setRegion(region, animated: true)
+        self.mapa.mapType = MKMapType.standard
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -70,5 +71,20 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         self.present(alertController, animated: true, completion: nil)
     }
 
+    @IBAction func cambiarTipoMapa(_ sender: UISegmentedControl) {
+        switch sender.selectedSegmentIndex {
+        case 0:
+            self.mapa.mapType = MKMapType.standard
+            break
+        case 1:
+            self.mapa.mapType = MKMapType.satelliteFlyover
+            break
+        case 2:
+            self.mapa.mapType = MKMapType.hybridFlyover
+            break
+        default:
+            break
+        }
+    }
 }
 
