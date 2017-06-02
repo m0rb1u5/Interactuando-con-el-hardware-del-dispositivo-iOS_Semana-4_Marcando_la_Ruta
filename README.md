@@ -37,7 +37,7 @@ Se muestra la pantalla del iPhone 6 al ejecutar el programa (hacer click en la i
 
 Todas las funcionalidades fueron realizadas, así se ponen pines cada vez que el usuario se mueve más de 50 metros. En seguida se muestra la autorización que se pide la primera vez que se abre la aplicación:
 
-<img src="./images/autorizacion.png" width="500">
+<img src="./images/autorizacion.png" width="300">
 
 ***
 Juan Carlos Carbajal Ipenza
