@@ -33,7 +33,7 @@ Selecciona la opción que más describa el trabajo que estás revisando.
 ## Resultado
 Se muestra la pantalla del iPhone 6 al ejecutar el programa (hacer click en la imagen para ver la ejecución):
 
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi//0.jpg)](https://www.youtube.com/watch?v= "Marcando la Ruta")
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/0iytKFDrj4E/0.jpg)](https://www.youtube.com/watch?v=0iytKFDrj4E "Marcando la Ruta")
 
 Todas las funcionalidades fueron realizadas, así se ponen pines cada vez que el usuario se mueve más de 50 metros. En seguida se muestra la autorización que se pide la primera vez que se abre la aplicación:
 
